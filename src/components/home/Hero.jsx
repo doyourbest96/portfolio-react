@@ -12,12 +12,17 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
-            Frontend Developer
+            Full Stack AI & <br />
+            Blockchain Developer
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            I create beautiful and functional web experiences with modern technologies
+            Building the future with AI, Blockchain, and Web3 technologies. 
+            Specializing in smart contracts, decentralized applications, and AI integration.
           </p>
-          <Button>View My Work</Button>
+          <div className="flex gap-4 justify-center">
+            <Button>View Projects</Button>
+            <Button variant="secondary">Read Blog</Button>
+          </div>
         </motion.div>
       </div>
     </section>

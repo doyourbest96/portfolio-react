@@ -4,8 +4,10 @@ import SkillCard from './SkillCard';
 
 const SkillsGrid = () => {
   const skills = [
-    "React", "JavaScript", "TypeScript", "Node.js",
-    "HTML5", "CSS3", "Tailwind CSS", "Git"
+    "Solidity", "Smart Contracts", "Ethereum", "Web3.js",
+    "Python", "TensorFlow", "PyTorch", "Natural Language Processing",
+    "React", "Node.js", "TypeScript", "GraphQL",
+    "IPFS", "DeFi", "NFTs", "Machine Learning"
   ];
 
   return (
