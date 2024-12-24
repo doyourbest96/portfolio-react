@@ -9,3 +9,14 @@ html {
 body {
   font-family: 'Inter', sans-serif;
 }
+
+.dark body {
+  background-color: #111827;
+  color: #fff;
+}
+
+@layer base {
+  body {
+    @apply transition-colors duration-200;
+  }
+}
