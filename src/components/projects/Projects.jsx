@@ -10,11 +10,11 @@ const Projects = () => {
     : projectsData.filter(project => project.featured);
 
   return (
-    <section id="projects" className="py-20 bg-gray-50">
+    <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Featured Projects</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold mb-4 dark:text-white">Featured Projects</h2>
+          <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             Exploring the intersection of AI and blockchain through innovative solutions
             and cutting-edge technology integrations.
           </p>
