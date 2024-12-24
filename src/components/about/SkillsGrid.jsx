@@ -15,9 +15,9 @@ const SkillsGrid = () => {
       initial={{ opacity: 0, x: 20 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
-      className="bg-gray-50 p-8 rounded-lg"
+      className="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg"
     >
-      <h3 className="text-2xl font-bold mb-6">Skills & Technologies</h3>
+      <h3 className="text-2xl font-bold mb-6 dark:text-white">Skills & Technologies</h3>
       <div className="grid grid-cols-2 gap-4">
         {skills.map((skill, index) => (
           <SkillCard key={skill} skill={skill} index={index} />
