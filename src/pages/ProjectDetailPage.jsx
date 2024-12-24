@@ -12,9 +12,9 @@ const ProjectDetailPage = () => {
 
   if (!project) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center dark:bg-gray-900">
         <div className="text-center">
-          <h2 className="text-2xl font-bold mb-4">Project not found</h2>
+          <h2 className="text-2xl font-bold mb-4 dark:text-white">Project not found</h2>
           <Button onClick={() => navigate('/')}>Back to Home</Button>
         </div>
       </div>
@@ -22,7 +22,7 @@ const ProjectDetailPage = () => {
   }
 
   return (
-    <section className="py-32">
+    <section className="py-32 dark:bg-gray-900">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -47,11 +47,11 @@ const ProjectDetailPage = () => {
             </div>
 
             <div>
-              <h1 className="text-4xl font-bold mb-4">{project.title}</h1>
-              <p className="text-gray-600 mb-6">{project.description}</p>
+              <h1 className="text-4xl font-bold mb-4 dark:text-white">{project.title}</h1>
+              <p className="text-gray-600 dark:text-gray-300 mb-6">{project.description}</p>
 
               <div className="mb-8">
-                <h2 className="text-2xl font-bold mb-4">Technologies Used</h2>
+                <h2 className="text-2xl font-bold mb-4 dark:text-white">Technologies Used</h2>
                 <div className="flex flex-wrap gap-2">
                   {project.tech.map((tech, index) => (
                     <TechTag key={index} tech={tech} />
@@ -60,8 +60,8 @@ const ProjectDetailPage = () => {
               </div>
 
               <div className="mb-8">
-                <h2 className="text-2xl font-bold mb-4">Key Features</h2>
-                <ul className="list-disc list-inside space-y-2 text-gray-600">
+                <h2 className="text-2xl font-bold mb-4 dark:text-white">Key Features</h2>
+                <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300">
                   <li>Feature 1 description</li>
                   <li>Feature 2 description</li>
                   <li>Feature 3 description</li>
