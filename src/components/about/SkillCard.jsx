@@ -7,7 +7,7 @@ const SkillCard = ({ skill, index }) => (
     initial={{ opacity: 0, y: 10 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.3, delay: index * 0.1 }}
-    className="bg-white p-4 rounded-lg shadow-sm"
+    className="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-sm dark:text-gray-200"
   >
     {skill}
   </motion.div>
