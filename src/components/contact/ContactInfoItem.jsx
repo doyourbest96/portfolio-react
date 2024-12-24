@@ -6,10 +6,10 @@ const ContactInfoItem = ({ icon, title, content }) => (
     whileHover={{ scale: 1.05 }}
     className="flex items-center space-x-4"
   >
-    <div className="text-2xl text-indigo-600">{icon}</div>
+    <div className="text-2xl text-indigo-600 dark:text-indigo-400">{icon}</div>
     <div>
-      <h3 className="font-semibold">{title}</h3>
-      <p className="text-gray-600">{content}</p>
+      <h3 className="font-semibold dark:text-white">{title}</h3>
+      <p className="text-gray-600 dark:text-gray-300">{content}</p>
     </div>
   </motion.div>
 );
